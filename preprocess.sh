@@ -16,11 +16,14 @@ rm -rf "$1"/api_docs/java
 set -e
 
 
-which parallel > /dev/null 2>&1 && {
-	find "$1" -type f -name '*.html' | parallel --eta ./transform.py '{}'
-} || {
-	find "$1" -type f -name '*.html' -exec ./transform.py {} \;
-}
+#which parallel > /dev/null 2>&1 && {
+#	find "$1" -type f -name '*.html' | parallel --eta ./transform.py '{}'
+#} || {
+#	find "$1" -type f -name '*.html' -exec ./transform.py {} \;
+#}
+
+find "$1" -type f -name '*.html' > tmp_to_transform.txt
+cat tmp_to_transform.txt | xargs -n1 -P16 -I% ./transform.py %
 
 find "$1" -type f -name "*.mp4" -delete
 
