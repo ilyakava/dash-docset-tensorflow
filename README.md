@@ -8,6 +8,7 @@ View TensorFlow docs in the [dash](https://kapeli.com/dash)/[zeal](https://githu
 
 To use, you can add the following feeds in Dash/Zeal:
 - v1.15: `https://raw.githubusercontent.com/ilyakava/dash-docset-tensorflow/master/TensorFlow-v1.15.xml`
+- v2.2: `https://raw.githubusercontent.com/ilyakava/dash-docset-tensorflow/master/TensorFlow-v2.2.xml`
 
 Or download archived docsets as releases [here](https://github.com/ilyakava/dash-docset-tensorflow/releases).
 
