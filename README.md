@@ -4,11 +4,12 @@
 
 View TensorFlow docs in the [dash](https://kapeli.com/dash)/[zeal](https://github.com/zealdocs/zeal) offline docset browser.
 
-To use, you can add this feed in Dash/Zeal:
-```
-https://raw.githubusercontent.com/ppwwyyxx/dash-docset-tensorflow/master/TensorFlow.xml
-```
-Or download the latest release [here](https://github.com/ppwwyyxx/dash-docset-tensorflow/releases).
+## Dash/Zeal Feeds
+
+To use, you can add the following feeds in Dash/Zeal:
+- v1.15: `https://raw.githubusercontent.com/ilyakava/dash-docset-tensorflow/master/TensorFlow-v1.15.xml`
+
+Or download archived docsets as releases [here](https://github.com/ilyakava/dash-docset-tensorflow/releases).
 
 ## Steps to generate the docset
 + Install [dashing](https://github.com/technosophos/dashing): `go get -u github.com/technosophos/dashing`
